@@ -6,4 +6,9 @@ print("Hello world")
 
 # user input
 name = input("What is your name? ")
-print("Hello ", name,
+print("Hello ", name, " nice to meet you")
+
+# Thank you for the short review
+
+
+
