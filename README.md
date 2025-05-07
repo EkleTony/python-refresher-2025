@@ -22,11 +22,11 @@ This repository contains code snippets, exercises, and notes from my recent revi
   - Stacks, queues, arrays
   - Performance insights with practical use cases
 
-## 🧠 Why this Repo?
+## Why this Repo?
 
 A quick and practical refresher to stay sharp with Python before diving into advanced projects and interviews.
 
-## ✅ Next Steps
+## Next Steps
 
 - Brush up on algorithms with LeetCode
 - Review Pythonic idioms and best practices
