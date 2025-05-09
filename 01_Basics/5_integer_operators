@@ -1,0 +1,64 @@
+# ============= Number Data Types ============
+
+
+import math
+x = 3.4534  # float
+y = 4
+z = 5
+
+# result = round(x, 2)  # rounded to two place
+# result = abs(y)
+# result = pow(3, 2) # 3 **2
+# print(result)
+print("pi", math.pi)
+print("e", math.e)
+print("square-root of 4", math.sqrt(y))
+print("floor or round down:", math.floor(x))
+
+
+# ============== Examples =================
+print(" 1. =========== Circumference of a Circle ================")
+# C = 2* pi*r
+# radius = float(input("Enter radius: "))
+radius = 1.234
+C = 2 * round(math.pi, 4) * radius
+print(f"Circumference of a Circle with radius {radius} == , {round(C, 4)}cm ")
+
+print()
+print("2. ====== Area of a Circle =======")
+# Area =  pi*r^2
+
+area = round(math.pi) * (radius**2)
+print(f"Area of a circle with radius {radius} cm is == {area} cm²")
+
+
+# ============== Hypothenus of a right-angle triagle ============
+
+print()
+print("3. =============== Long side of Right-Angle Triangle ===============")
+# C = sqrt (a^2 + b^2 )
+a = 3  # float(input("Enter a: "))
+b = 5  # float(input("Enter b: "))
+c = math.sqrt(a**2 + b**2)
+
+print(
+    f"The Hypotenuse of a right-angle triangle is with sides {a} and {b}  == {c:.2f} cm ")
+
+
+# ========== RMSE ===========
+print()
+print("============= RMSE =============")
+# RMSE = sqrt( (sum(Xi - x_i)^2)/N )
+y1 = [1,2,3,4,4,5,6,7] # ground truth
+y2 =  [1.2, 2.0, 3.1, 4.0, 4.5, 5.1, 6.1, 7.4]
+
+def elementwise_diff(y1, y2):
+    return [(abs(a-b))**2 for a, b in zip(y1, y2)]
+
+def rmse(y1, y2):
+    numerator = sum(elementwise_diff(y1, y2))
+    return  math.sqrt(numerator/len(y1))
+
+print(f"RMSE of y1 = {y} and predicted {y1} is: {rmse(y1, y2)}")
+
+#print(list(zip(y, y1)) )

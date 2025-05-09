@@ -28,4 +28,12 @@ fruits.remove("orange")
 print(fruits)
 fruits.insert(0, "pineapple")
 # print(fruits)
-# fruits.sor
+# fruits.sort()
+# fruits.pop() # remove first eleemnt
+# print(fruits)
+
+# ============= Tuple ==============
+fruits2 = ("apple", "banana", "orange", "coconut", "orange", "mango")
+print("orange" in fruits2)
+print(fruits2.index("apple"))
+print(fruits2.count("orange"))
