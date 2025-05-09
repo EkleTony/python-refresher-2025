@@ -1,1 +1,7 @@
-i deleted all names in the names.txt======== newly added =======
+i deleted all names in the names.txt======== newly added ======== 
+1. Anthony
+2. John 
+3.  Peter 
+4. Luke 
+5. Alex 
+6. Aton 

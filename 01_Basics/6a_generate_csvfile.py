@@ -19,4 +19,11 @@ with open(csv_path, "w", newline="") as file:
 csv_path
 
 
-# Create
+# Create a text file version of the same data
+txt_path = "predictions.txt"
+with open(txt_path, "w") as file:
+    file.write("actual,predicted\n")
+    for row in records:
+        file.write(f"{row['actual']},{row['predicted']}\n")
+
+txt_path
