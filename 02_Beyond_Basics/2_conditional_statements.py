@@ -31,6 +31,7 @@ high_income = True if income > 50000 else False
 good_credit = True if credit > 800 else False
 student = True if student == "yes" else False
 
+# Using logical operators
 print("========= Loan Eligibility =============")
 if high_income and good_credit and not student:
     print("Eligible for Loan")
@@ -39,3 +40,10 @@ if not student:
     print("Not Eligible")
 else:
     print("Not Eligible")
+
+
+# Chaining Comparison operator
+print("================ Chaining Logical Operators ================")
+age = 22
+if 18 <= age < 65:  # age >= 18 and age < 65:
+    print("Eligible Candidate...!")
