@@ -33,10 +33,4 @@ This project prints vertical multiplication tables from 1 to 20, for numbers 1 t
 
 ## Why this Repo?
 
-A quick and practical refresher to stay sharp with Python before diving into advanced projects and interviews.
-
-## Next Steps
-
-- Brush up on algorithms with LeetCode
-- Review Pythonic idioms and best practices
-- Tackle intermediate topics: generators, decorators, async
+A quick and 

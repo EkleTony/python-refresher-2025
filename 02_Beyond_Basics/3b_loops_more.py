@@ -30,9 +30,4 @@ print()
 # Print headers for each table
 for k in range(1, 9):
     print(f" Table {k} ", end="\t")
-print()  # Newline before table body
-
-for i, j in enumerate(range(1, 21)):
-    for k in range(1, 9):
-        print(f"{k} * {i+1} =  {j*k}", end="\t")
-    print()
+pri
