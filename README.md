@@ -8,11 +8,20 @@ This repository contains code snippets, exercises, and notes from my recent revi
 
 - Duration: 3h 41m | Released: Feb 21, 2025
 - Focused on:
+
   - Syntax refresher
   - Functions, modules, and exceptions
   - File I/O, dates & times
   - JSON/XML parsing
   - Object-oriented basics
+
+  ## 🧮 Multiplication Tables (1–8 × 1–20)
+
+This project prints vertical multiplication tables from 1 to 20, for numbers 1 to 8 — all neatly aligned side by side.
+
+### Sample Output
+
+![Multiplication Table Output](images/multiplication_table.png)
 
 ### 2. Python Data Structures – _Kathryn Hodge_
 
