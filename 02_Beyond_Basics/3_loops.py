@@ -27,9 +27,3 @@ while i <= 12:
         j += 1
     print()
     i += 1
-
-print("========== Multiplication TAble with for loop=======")
-for i in range(1, 13):
-    for j in range(1, 13):
-        print(f"{i*j}", end=" \t")
-    print()
