@@ -4,20 +4,15 @@ def is_palindrome(test):
     test = test.lower()  # convert to lower
 
     # strip al the spaces and punctuations
-    newstr = ""
+    strr = [""]
     for s in test:
         if s.isalnum():
-            newstr += s
+            strr.append(s)
 
+    newstr = ''.join(strr)
     # now calculate the reverse of the string
-    return newstr == newstr[::-1]
 
-    # lst = list(test.split(","))
-    # for s in lst:
-    #     if s[::1] == s[::-1]:
-    #         return True
-    #     else:
-    #         return False
+    return newstr, "  ==  ", newstr[::1] == newstr[::-1]
 
 
 test_word1 = "MadAm, I'm Adam."
