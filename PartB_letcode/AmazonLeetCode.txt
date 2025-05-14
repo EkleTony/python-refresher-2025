@@ -1,0 +1,103 @@
+\===============================
+AMAZON INTERVIEW LEETCODE PLAN (May 15, 2025)
+=============================================
+
+🎯 Focus: Most-likely Leetcode questions for Amazon Applied Scientist intern interview
+🕒 Timeframe: Final \~1.5 days (May 14–15 morning)
+
+\======================================
+📌 TOP 20 PRIORITY PROBLEMS TO COVER
+====================================
+
+1. **Two Sum** (LC 1)
+   ➤ Hash map + array basics
+
+2. **Group Anagrams** (LC 49)
+   ➤ Hashing + sorting strings
+
+3. **Best Time to Buy and Sell Stock** (LC 121)
+   ➤ One-pass, max profit tracking
+
+4. **Valid Parentheses** (LC 20)
+   ➤ Stack problem
+
+5. **Linked List Cycle** (LC 141)
+   ➤ Fast/slow pointers
+
+6. **Climbing Stairs** (LC 70)
+   ➤ DP or Fibonacci-style recursion
+
+7. **Valid Anagram** (LC 242)
+   ➤ Frequency count using HashMap or array
+
+8. **Palindrome Linked List** (LC 234)
+   ➤ Reverse second half and compare
+
+9. **Number of Islands** (LC 200)
+   ➤ Graph traversal (DFS/BFS)
+
+10. **Find the Duplicate Number** (LC 287)
+    ➤ Cycle detection (Floyd's Tortoise & Hare)
+
+11. **Majority Element** (LC 169)
+    ➤ Boyer-Moore Voting Algorithm
+
+12. **Move Zeroes** (LC 283)
+    ➤ In-place array manipulation
+
+13. **Reverse Linked List** (LC 206)
+    ➤ Iterative and recursive approaches
+
+14. **Missing Number** (LC 268)
+    ➤ Gauss formula or XOR trick
+
+15. **Binary Tree Inorder Traversal** (LC 94)
+    ➤ DFS recursion and stack approach
+
+16. **Min Stack** (LC 155)
+    ➤ Stack with min tracking
+
+17. **House Robber** (LC 198)
+    ➤ Basic DP problem
+
+18. **Search Insert Position** (LC 35)
+    ➤ Binary Search edge cases
+
+19. **Product of Array Except Self** (LC 238)
+    ➤ Prefix/suffix product arrays
+
+20. **Course Schedule** (LC 207)
+    ➤ Topological sort for DAG
+
+\=====================================
+📺 PLAN FOR EACH PROBLEM (YOUTUBE)
+==================================
+
+* Search by name (e.g., "Leetcode Two Sum explanation")
+* Watch a 10–15 min video
+* Pause, implement yourself first
+* Type & test code in Leetcode or LiveCode-like editor
+* Practice explaining your approach aloud
+
+\=====================================
+⏱️ TIME ALLOCATION (RECOMMENDED)
+================================
+
+* **May 14 Morning–Afternoon**: 8–10 problems
+* **May 14 Evening**: 6–8 problems + review your STAR stories
+* **May 15 Morning (1 hour before)**: 1–2 light problems as warm-up
+
+\==============================
+🧠 FINAL NOTES
+==============
+
+* Communicate clearly
+* Think out loud
+* Structure your answers (STAR for behaviorals, logical for tech)
+* Show curiosity + reasoning, not just answers
+
+\=======================
+Prepared by: Anthony Ekle
+PhD Candidate, Computer Science
+Tennessee Tech University
+=========================

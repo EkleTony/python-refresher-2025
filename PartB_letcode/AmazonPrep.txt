@@ -87,6 +87,69 @@ MINDSET REMINDERS
 * Structure your answers (STAR for behaviorals, logical for tech)
 * Show curiosity + reasoning, not just answers
 
+
+Goal: Type full solutions, explain out loud as if you're in the interview.
+
+===== MIDDAY TO EVENING (ML/Research Discussion) =====
+
+🧠 Prepare 60–90 sec summary:
+
+What is DecayRank?
+
+What problem are you solving?
+
+Why use GNNs or CMS Sketches?
+
+What's novel about your approach?
+
+How do you evaluate anomaly detection?
+
+📘 Review Key ML Concepts:
+
+GCNs vs Transformers
+
+Multi-head Attention
+
+Bayesian Inference
+
+A/B Testing, Experiment Design
+
+===== NIGHT (Behavioral/Leadership) =====
+
+🔥 Key Amazon Leadership Principles:
+
+Ownership
+
+Learn and Be Curious
+
+Deliver Results
+
+Bias for Action
+
+Invent and Simplify
+
+Have Backbone; Disagree and Commit
+
+📝 Prepare STAR stories (Situation, Task, Action, Result)
+🎤 Sample Questions:
+
+Tell me about a time you solved a problem no one else could.
+
+Tell me about a time you disagreed with a supervisor or teammate.
+
+Tell me about a project that exceeded expectations.
+
+Tell me about a time you made a mistake and how you handled it.
+
+==============================
+2️⃣ INTERVIEW DAY CHECKLIST
+
+✅ Light coding warm-up
+✅ Quick STAR story review
+✅ Test Amazon Chime & LiveCode
+✅ Rest, hydrate, clear your space
+✅ Confidence + calm mindset
+
 \=======================
 Prepared by: Anthony (Ocheme) Ekle
 PhD Candidate, Computer Science
