@@ -1,0 +1,94 @@
+\=============================
+AMAZON RESEARCH SCIENTIST INTERN INTERVIEW PREP – MAY 15, 2025
+==============================================================
+
+## 📅 **Interview Details**
+
+* **Date:** May 15, 2025
+* **Time:** 9:00 AM PDT / 11:00 AM CT
+* **Platform:** Amazon Chime + LiveCode
+* **Chime Link:** [https://chime.aws/8843801516](https://chime.aws/8843801516)
+
+🕒 **Total Prep Time Remaining:** \~36 hours (as of May 14, 1:00 AM)
+
+\=================================
+1️⃣ FOCUSED PREP PLAN (8–10 HOURS)
+==================================
+
+\===== MORNING (2 hours) — CODING WARM-UP =====
+🔹 Practice Leetcode Patterns:
+
+* HashMap / Dictionary
+* Two Pointers / Sliding Window
+* Arrays / Strings
+* Optional: Basic DFS / Graph Traversal
+
+🔹 Suggested Problems:
+
+* LC 1: Two Sum
+* LC 49: Group Anagrams
+* LC 567: Permutation in String
+* LC 141: Linked List Cycle
+* LC 438: Find All Anagrams in a String
+
+🎯 **Goal:** Practice typing out code + explain your thought process out loud.
+
+\===== AFTERNOON (3–4 hours) — RESEARCH + ML DISCUSSION =====
+🧠 **Prepare 60–90 sec summary:**
+
+* What is **DecayRank**?
+* What problem are you solving?
+* Why use **Graph Neural Networks** or **CMS Sketches**?
+* What’s **novel** about your method?
+* How do you **evaluate** anomaly detection?
+
+📘 **Review Key Concepts:**
+
+* GCNs vs Transformers
+* Multi-head Attention
+* Bayesian inference
+* A/B testing, experiment design
+
+\===== EVENING (2–3 hours) — AMAZON LEADERSHIP PRINCIPLES =====
+🔥 **Top Principles to Prepare For:**
+
+* Ownership
+* Learn and Be Curious
+* Deliver Results
+* Bias for Action
+* Invent and Simplify
+* Have Backbone; Disagree and Commit
+
+📝 **Prepare 1 STAR story** for each:
+
+* Situation, Task, Action, Result
+
+🎤 **Practice Questions:**
+
+* Tell me about a time you solved a problem no one else could.
+* Tell me about a time you disagreed with a supervisor or teammate.
+
+\============================
+2️⃣ INTERVIEW DAY CHECKLIST
+===========================
+
+🔁 **One light Leetcode warm-up**
+📑 Review STAR stories
+✅ Test Chime & LiveCode access
+💧 Hydrate + rest well
+🧠 Stay calm and focused
+
+\=================
+MINDSET REMINDERS
+=================
+
+* Communicate clearly
+* Think out loud
+* Structure your answers (STAR for behaviorals, logical for tech)
+* Show curiosity + reasoning, not just answers
+
+\=======================
+Prepared by: Anthony (Ocheme) Ekle
+PhD Candidate, Computer Science
+Tennessee Tech University
+=========================
