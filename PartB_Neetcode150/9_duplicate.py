@@ -47,4 +47,30 @@ print(f"Num Freq: {frq[0]}")
 
 # O(n) i.e counting and list comprehension O(k)
 # Space is O(k)
-# output [2, 3
+# output [2, 3]
+
+
+print("=============Using HashSEt ============")
+
+
+def findDuplicate2(nums):
+    # hashset  = set()
+
+    # for i in nums:
+    #     if i in hashset:
+    #         return True
+
+    #     hashset.add(i)
+    # return False
+    # Using counters ========
+    counter = Counter(nums)
+    for k, v in counter.items():
+        if v > 1:
+            return True
+
+    return False
+
+
+print(nums)
+x = findDuplicate2(nums)
+print(x)
