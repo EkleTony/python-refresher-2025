@@ -40,4 +40,43 @@ def twoSum2(nums, target):
             l += 1
         else:
             r -= 1
-  
+    # return None
+
+
+print(twoSum2(nums, target))
+
+print("\n ================= Using Hash Map and Complement============")
+
+def twoSum22(nums, target):
+    #using hashmap and complement
+    seen = {}
+    
+    for i, val in enumerate(nums):
+        complement = target - val
+        
+        # check if complement in seen-hash else update
+        if complement in seen:
+            return [seen[complement], i]
+        
+        seen[val] = i
+    return seen
+
+print(twoSum22(nums, target))
+
+
+# def twoSum3(nums, target):
+#     seen = {}  # hashmap
+
+#     for i, num in enumerate(nums):
+#         complement = target - num
+#         if complement in seen:
+#             return [[complement, num], seen[complement], i]
+#         # updating hashmap
+#         seen[num] = i
+#     return seen
+
+
+# print(twoSum3(nums, target))
+
+        
+        
