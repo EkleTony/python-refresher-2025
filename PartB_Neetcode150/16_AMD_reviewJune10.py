@@ -1,9 +1,12 @@
 # ========== REviewoing my codes ============
 
 # 1. Find Closest Number to Zero - Leetcode 2239 - Arrays & Strings (Python)
+from collections import Counter
 nums = [-4, -2, 1, -1, 4, 8]
 # nums = [5, -5]
 # nums = [0, -1, 1]
+
+print("============== Closest to Zero ================")
 
 
 def findClosestNumber(nums):
@@ -16,3 +19,39 @@ def findClosestNumber(nums):
 
 
 print(findClosestNumber(nums))
+
+
+# 2 Is Anagram ======
+print("\n ================= Is Anagram ==================== ")
+
+
+def isAnagram(st1, st2):
+    return Counter(st1) == Counter(st2)
+
+
+st1 = "eat"
+st2 = "ate"
+print(isAnagram(st1, st2))
+
+print("\n ==== Using HashMap====")
+
+
+def isAnagram2(st1, st2):
+    # case with different lenght
+    if len(st1) != len(st2):
+        return False
+    # buiding a hashmap
+    count1 = {}
+    count2 = {}
+
+    for i in range(len(st1)):
+        count1[st1[i]] = 1 + count1.get(st1[i], 0)
+        count2[st2[i]] = 1 + count2.get(st2[i], 0)
+    print(count1)
+    print(count2)
+    # now check if both are anagram
+    if count1 == count2:
+        return True
+
+
+print(isAnagram2(st1, "atea"))
