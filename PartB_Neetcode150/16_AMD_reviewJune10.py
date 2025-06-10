@@ -55,3 +55,11 @@ def isAnagram2(st1, st2):
 
 
 print(isAnagram2(st1, "atea"))
+
+
+def isAnagram3(st1, st2):
+    if sorted(st1) == sorted(st2):
+        return True
+
+
+print(isAnagram3(st1, st2))
