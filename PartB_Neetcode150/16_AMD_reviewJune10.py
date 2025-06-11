@@ -1,6 +1,7 @@
 # ========== REviewoing my codes ============
 
 # 1. Find Closest Number to Zero - Leetcode 2239 - Arrays & Strings (Python)
+from collections import defaultdict
 from collections import Counter
 nums = [-4, -2, 1, -1, 4, 8]
 # nums = [5, -5]
@@ -63,3 +64,21 @@ def isAnagram3(st1, st2):
 
 
 print(isAnagram3(st1, st2))
+
+
+print("\n===========================GROUP ANAGRAM !======================================")
+st = ["eat", "tea", "tan", "ate", "nat", "bat"]
+# Output: [["eat","tea","ate"],["tan","nat"],["bat"]]
+print(" Original Strings: ", st)
+
+
+def groupAnagram(st):
+    anagram = defaultdict(list)
+
+    for word in st:
+        key = ''.join(sorted(word))
+        anagram[key].append(word)
+    return list(anagram.values())
+
+
+print("Grouped Anagram: ", groupAnagram(st))
