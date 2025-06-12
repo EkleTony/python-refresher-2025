@@ -32,3 +32,40 @@ print(mergeString(st1, st2))
 
 
 print("\n ==================== TopK element =================")
+# ============= TopK frequent Elements ==============
+# Givne an interger array nums and an integer k, return the k most frquent elements.
+# You may return the answer in any order
+
+nums = [1,1,2,2,3,4,1,1,2,2,3,7,8,45,6,4,5,6]
+from collections import Counter
+def topKFreq(nums, k):
+    counts = Counter(nums)
+    
+    common = counts.most_common()
+    #topk = [key for key, v in common if v > k]
+    topk = [key for key, v in counts.most_common(k)]
+    
+    return topk
+
+print(topKFreq(nums, 2))
+
+print("\n ========== UISing hash map and priority quuee for topkfreq===============")
+from collections import Counter
+import heapq
+
+def topKFreq2(nums, k):
+    count = {}
+    minHeap = []
+    for  i in range(len(nums)):
+        count[nums[i]] = 1 + count.get(nums[i], 0)
+    print(count)
+    # next go throught
+    #=== 2 Using MinHeap====
+    for key, val in count.items():
+        if len(minHeap) < k:
+            heapq.heappush(minHeap, (val, key))
+        else:
+            heapq.heappushpop(minHeap, (val, key))
+    return [h[1] for h in minHeap]
+        
+print(topKFreq2(nums, 2))
