@@ -69,3 +69,49 @@ def topKFreq2(nums, k):
     return [h[1] for h in minHeap]
         
 print(topKFreq2(nums, 2))
+
+print("\n ======== is Palindrome =============")
+s = "aBad"
+
+def isPalin(st):
+    # lower, check alpha-numeric, and reverse
+    lst = []
+    st = st.lower()
+    for char in st:
+        if char.isalnum():
+            lst.append(char)
+    
+    return lst[::1] == lst[::-1]
+            
+print(isPalin(s))
+
+print("\n ============== Two Sum ===============")
+nums = [2, 7, 11, 15]
+target = 13
+# output = [0,1] i,e 2+7 = 9
+
+def twoSum(nums, t):
+    for i in range(len(nums)):
+        for j in range(i, len(nums)):
+            if (nums[i]+ nums[j]) == t:
+                return [nums[i], nums[j]], " = ", [i, j]
+
+print(twoSum(nums, target))
+
+# method two using sliding windows
+def twoSum2(nums, target):
+    n = len(nums)
+    left = 0
+    right = n -1
+    
+    while left < right:
+        summ = nums[left] + nums[right]
+        
+        if summ == target:
+            return [nums[left], nums[right]], " = ", [left, right]
+        else:
+            if summ < target:
+                left += 1
+            else:
+                right -= 1
+print(f"Method 2: {twoSum2(nums, target)}")
