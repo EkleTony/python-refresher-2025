@@ -37,5 +37,31 @@ print(sortedSquare([-4, -1, 0, 3, 10]))
 
 # ======== 3 Merge String============
 def mergeString(str1, str2):
-    left = 0
-    right =
+    A = len(str1)
+    B = len(str2)
+    a, b = 0, 0
+    word = 1
+    res = []
+
+    while a < A and b < B:
+        if word == 1:
+            res.append(str1[a])
+            a += 1
+            word = 2
+        else:
+            res.append(str2[b])
+            b += 1
+            word = 1
+    while a < A:
+        res.append(str1[a])
+        a += 1
+
+    while b < B:
+        res.append(str2[b])
+        b += 1
+
+    return ''.join(res)
+
+
+print("\n =========Merge Strings recap=====\n")
+print(f"Merge {'abc'} & {'pqrt'} = {mergeString('abc', 'pqrt')} ")

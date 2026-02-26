@@ -6,7 +6,7 @@ arr2 = [1,7,9,3,1,4,8]
 def unionIntersection(arr1, arr2):
     return "Union = ", list(set(arr1) | set(arr2)) , "Intersection = ", list(set(arr1) & set(arr2))
 
-print(unionIntersection(arr1, arr2))
+# print(unionIntersection(arr1, arr2))
 
 def intersection_two_pointer(arr1, arr2):
     i, j = 0, 0
@@ -24,6 +24,27 @@ def intersection_two_pointer(arr1, arr2):
             j += 1
     return result
 
-print(intersection_two_pointer(arr1, arr2))
+# print(intersection_two_pointer(arr1, arr2))
       
       
+def interArray(num1, num2):
+    num1.sort()
+    num2.sort()
+    i, j =0,0
+    result = []
+    
+    while i <len(num1) and j < len(num2):
+        if num1[i] == num2[j]:
+            if not result or result[-1] != num1[i]:
+                result.append(num1[i])
+            i += 1
+            j += 1
+        elif num1[i] < num2[j]:
+            i += 1
+        else:
+            j += 1
+            
+    return result
+
+print("=== interception of arrys===")
+print(f"===updated interception: {interArray([1,3,4], [9,4,1,3])}")      

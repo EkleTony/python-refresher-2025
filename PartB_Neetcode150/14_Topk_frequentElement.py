@@ -22,6 +22,14 @@ def topKfreq(nums, k):
     return res
 
 
+def topK(num, k):
+    count = Counter(num)
+    most_common = count.most_common(k)  # O(nlog n)
+    result = [k for k, v in most_common]
+
+    return result
+
+
 print("Most Freq elelment at k = ", k, " are ", topKfreq(nums, k))
 
 

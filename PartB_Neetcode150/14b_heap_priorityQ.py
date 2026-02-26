@@ -107,7 +107,6 @@ def topKfreq(arr, k):
     print(f"Array: {arr}")
     return num
 
-
 print(f"My heap: {heap}")
 print("lenght: ", len(heap))
 
