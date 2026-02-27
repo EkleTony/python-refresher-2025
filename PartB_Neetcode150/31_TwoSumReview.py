@@ -29,6 +29,6 @@ def twoSum2(arr1, target):
             else:
                 r -= 1
 
-arr1 = [2, 3, 4, 5, 7]
-target = 6
+arr1 = [2, 3, 4, 5, 7, 5,6,8,9]
+target = 10
 print("Two Sum and Target==", twoSum2(arr1, target))
