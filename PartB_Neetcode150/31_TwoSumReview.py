@@ -30,5 +30,5 @@ def twoSum2(arr1, target):
                 r -= 1
 
 arr1 = [2, 3, 4, 5, 7, 5,6,8,9]
-target = 10
+target = 15
 print("Two Sum and Target==", twoSum2(arr1, target))
