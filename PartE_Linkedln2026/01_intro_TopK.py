@@ -11,24 +11,21 @@
 """
 
 
-#========Question 1===
+# ========Question 1===
 """Q1:  Given an integer array num and an interger k return the k most freq elements.
 e.g,
 nums = [1,1,1,2,2,3] k=2, output = [1,2]
 
 """
+# 1. Using Counter---- O(nlogN)
 from collections import Counter
 def topK(num, k):
-    n = len(num)
-    ans = []
     count = Counter(num)
-    ans.append([i for i, k in count.items() if k>1])
+    most_common = count.most_common(k)  # O(nlog n )
+    ans = [i for i, k in most_common]
     return ans
-    
 
-nums = [1, 1, 1, 2, 2, 3] 
+
+nums = [1, 1, 1, 2, 2, 3]
 k = 2
 print(topK(nums, k))
-    
-
-
