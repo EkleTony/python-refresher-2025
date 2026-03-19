@@ -29,3 +29,18 @@ def topK(num, k):
 nums = [1, 1, 1, 2, 2, 3]
 k = 2
 print(topK(nums, k))
+
+
+""" === Using Heap i.e a Min-Heap or max heap  .... operaint of O(n) vs O(nlogk)--"""
+
+
+def sumArray(num):
+    n = len(num)
+    sumA = 0
+    for i in range(n):  # O(n)
+        sumA += num[i]  # O(1)
+    return sumA
+
+
+print("Sum of Array: ", sumArray(nums))
+print(f'Sum of Array {nums} = {sumArray(nums)}')
