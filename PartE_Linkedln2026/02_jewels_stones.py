@@ -1,4 +1,4 @@
-"""_summary_ leetcode 771----
+"""_summary_ leetcode 771------
 
 Q: How many stones are jewels....
 
@@ -31,9 +31,9 @@ def jewelStone_set(jewels, stones):
     count = 0
 
     for stone in stones:  # O(n)
-        if stone in s:  # O(1)
+        if stone in s:    # O(1)
             count += 1
     return count
 
 
-print("lenght of jewel in stones:", jewelStone_set( jewels, stones))
+print("lenght of jewel in stones:", jewelStone_set(jewels, stones))
