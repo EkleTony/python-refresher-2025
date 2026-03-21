@@ -50,19 +50,20 @@ def bruteForce(nums):
 
 def usingSort(nums):
     # O(nlog n)
-    # nums.sort()
+    nums.sort()
 
-    # for i in range(len(nums)):
-    #     if nums[i] == nums[i-1]:
-    #         return True
-    # return False
-    seen = set()
-    for i in nums:
-        if i in seen:
+    for i in range(len(nums)):
+        if nums[i] == nums[i-1]:
             return True
-        else:
-            seen.add(i)  # putting it into the hash set
     return False
+
+    # seen = set()
+    # for i in nums:
+    #     if i in seen:
+    #         return True
+    #     else:
+    #         seen.add(i)  # putting it into the hash set
+    # return False
 
 
 print("BruteFoces Duplicate found: ", bruteForce([1, 2, 3, 4, 1]))
