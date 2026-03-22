@@ -7,7 +7,9 @@ Given an anarray o fk liknked lists, list , each linnked-list is sorted in ascen
 merge all the linnked-lists into on sorted linked-list and return it. 
 
 """
+
 import heapq
+
 lists = [[1, 4, 5], [1, 3, 4], [2, 6]]
 output = [1, 1, 2, 3, 4, 4, 5, 6]
 
@@ -35,6 +37,7 @@ print(f'Merge K sorted list: {mergeKList_simple(lists)}')
 
 
 # =============linked-list solution using a heap===============
+
 class ListNode:
     def __init__(self, val=0, next=None):
         self.val = val
