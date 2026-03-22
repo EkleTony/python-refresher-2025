@@ -36,3 +36,29 @@ def topKfreq2(nums, k):
 
 print("Return duplicate: ", duplicateValue(nums))
 print("Most Freq k elements: ", topKfreq2(nums, k))
+
+
+def twoSumReview(nums, target):
+
+    n = len(nums)
+    for i in range(n):
+        for j in range(i, n):
+            if nums[i] + nums[j] == target:
+                return [i, j]
+
+
+def twosum2(nums, target):
+    # using a hashmap approach
+
+    seen = {}
+    for i, num in enumerate(nums):  # mapping, {1:0, 2:1, 3:2, 4:3...}
+        complement = target - num  # for i=0, i.e 1, 5-1= 4
+        if complement in seen:  # is 4 in seen? no or yes,
+            return [seen[complement], i]  # the value and idex
+        seen[num] = i  # if com =4, and 3 seen {4:0, 3:1, 2:2 }
+
+
+nums = [1, 2, 3, 4]
+target = 5
+print(f'Two Sum of {nums} and {target} is {twoSumReview(nums, target)}')
+print(f'Two Sum method2 is {twosum2(nums, target)}')
