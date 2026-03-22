@@ -37,6 +37,8 @@ print(f'Merge K sorted list: {mergeKList_simple(lists)}')
 
 
 # =============linked-list solution using a heap===============
+# ===== This is a very good interview solution.
+# ======== LeetCode-style code
 
 class ListNode:
     def __init__(self, val=0, next=None):
