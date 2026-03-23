@@ -40,6 +40,7 @@ print(f'Merge K sorted list: {mergeKList_simple(lists)}')
 # ===== This is a very good interview solution.
 # ======== LeetCode-style code
 
+
 class ListNode:
     def __init__(self, val=0, next=None):
         self.val = val
@@ -47,23 +48,25 @@ class ListNode:
 
 
 def mergeKLists(lists):
-    heap = []
-
+    min_heap = []
     # Put the first node of each list into the heap
     for i, node in enumerate(lists):
         if node:
-            heapq.heappush(heap, (node.val, i, node))
+            heapq.heappush(min_heap, (node.val, i, node))
 
     dummy = ListNode(0)
     curr = dummy
 
-    while heap:
-        val, i, node = heapq.heappop(heap)
+    while min_heap:
+        val, i, node = heapq.heappop(min_heap)
 
         curr.next = node
         curr = curr.next
 
         if node.next:
-            heapq.heappush(heap, (node.next.val, i, node.next))
+            heapq.heappush(min_heap, (node.next.val, i, node.next))
 
     return dummy.next
+
+
+print(f' Merge K Sorted list {mergeKLists(lists)}')
