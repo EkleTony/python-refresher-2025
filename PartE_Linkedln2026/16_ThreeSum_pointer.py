@@ -77,3 +77,50 @@ def threeSum_pointer(nums):
 # time = O(n log n) + O(n^2) = O(n^2), Space = O(n)
 
 print(f'three Sum with pointer method: {threeSum_pointer(arr)}')
+
+print("=======================================")
+print("====== SORTED SQUARES----------!!!!!!!")
+
+
+def sortedSquares(nums):
+    res = []
+
+    for x in nums:
+        res.append(x**2)
+    return sorted(res)
+
+# O(nlog n)
+
+# using two pointers
+
+
+def sortedSquared_pointer(nums):
+
+    # method 1: using direct loop and sequared and sort
+    # n = len(nums)
+    # res = []
+    # for x in nums:
+    #     res.append(x**2)
+    # return sorted(res)
+
+    # method 2:  using two pointers
+    n = len(nums)
+    left = 0
+    right = n -1
+    res = []
+    
+    while left <= right:
+        if abs(nums[left]) < abs(nums[right]):
+            res.append(nums[left]**2)
+            left += 1
+        else:
+            res.append(nums[right] ** 2)
+            right -= 1
+            
+    return res
+
+
+nums = [-1, 2, 3, -5, 8, 4]  # ans = [1,4,9,16,25,64]
+print(f'Sorted Squared method 1 {nums} is == {sortedSquared_pointer(nums)}')
+print('==========================================')
+print(f'Sorted Squared method 2 {nums} is == {sortedSquared_pointer(nums)}')
