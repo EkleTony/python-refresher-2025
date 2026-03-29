@@ -45,7 +45,7 @@ def threeSum_pointer(nums):
     #  step 2: loop through the array and fix one number
     for i in range(n):  # O(n)
         # skipping duplicates
-        if nums[i] > 0 and nums[i] == nums[i-1]:
+        if i > 0 and nums[i] == nums[i-1]:
             continue
 
         # step 3: using the two pointers for other numbers
@@ -61,8 +61,9 @@ def threeSum_pointer(nums):
                 l += 1
                 r -= 1
                 # inside the if-- skip duplicates to avoid adding same triplets
-                while l < r and nums[l] == nums[l-1]:
+                while l < r and nums[l] == nums[l-1]:  # current low vs formal
                     l += 1
+                # current high value vs previeos...
                 while l < r and nums[r] == nums[r+1]:
                     r -= 1
             else:
@@ -106,9 +107,9 @@ def sortedSquared_pointer(nums):
     # method 2:  using two pointers
     n = len(nums)
     left = 0
-    right = n -1
+    right = n - 1
     res = []
-    
+
     while left <= right:
         if abs(nums[left]) < abs(nums[right]):
             res.append(nums[left]**2)
@@ -116,7 +117,7 @@ def sortedSquared_pointer(nums):
         else:
             res.append(nums[right] ** 2)
             right -= 1
-            
+
     return res
 
 
