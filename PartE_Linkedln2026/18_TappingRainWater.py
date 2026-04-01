@@ -11,7 +11,6 @@ def trapping_water(height):
     left_max = 0
     right_max = 0
     trapping_water = 0
-
     # using pointer
     while left < right:
         if height[left] < height[right]:
