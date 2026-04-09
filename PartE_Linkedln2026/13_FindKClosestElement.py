@@ -1,7 +1,8 @@
 """
 ============ Find K Closest Elements - Leetcode 658 - Python ======
 
-Q1: Given a sorted integer array arr, two integers k and x and return the k closest integers to x in the array . 
+Q1: Given a sorted integer array arr, two integers k and x and return the k closest
+integers to x in the array . 
 
 the result should also be sorted in ascending ord.
     

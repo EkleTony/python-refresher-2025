@@ -20,6 +20,7 @@ def longestString(st):
         while st[r] in seen:  # remember we only add i.e O(n)
             seen.remove(st[l])
             l += 1
+        seen.add(st[r])
 
         window = (r-l) + 1
         longest = max(longest, window)
@@ -29,5 +30,6 @@ def longestString(st):
 
     return longest
 # time O(n)
+
 
 print(f'Longest Substring: {longestString(st)}')

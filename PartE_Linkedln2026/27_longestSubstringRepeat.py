@@ -17,6 +17,7 @@ def longestSubstring(st):
             left += 1
 
         char_set.add(st[right])
+        window = (right - left) + 1
         max_subLenght = max(max_subLenght, right-left + 1)
     return max_subLenght
 

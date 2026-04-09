@@ -4,6 +4,16 @@ word1 = ab
 words = pqrs
 
 aqbqrs
+
+STEPS
+1. Initialize two pointers a and b for both strings.
+2. Create an empty list st to store the result.
+3. Loop while both pointers are within bounds.
+4. Alternate picking characters from each string.
+5. Move the corresponding pointer after each pick.
+6. Append remaining characters from word1 if any.
+7. Append remaining characters from word2 if any.
+8. Join the list into a final string and return.
  """
 
 

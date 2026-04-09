@@ -23,9 +23,9 @@ def validPalindrome2(st):
         while left < right:
             if st[left] != st[right]:
                 return False
-            left += 1
-            right -= 1
-        return True
+                left += 1
+                right -= 1
+            return True
 
     # initialize two ponters
     left = 0
@@ -33,6 +33,7 @@ def validPalindrome2(st):
     # traverse inward while left pointer is befoer reight pointer
     while left < right:
         if st[left] != st[right]:
+            # skip or delete the left or right char...!
             return is_pal(left+1, right) or is_pal(left, right-1)
 
         left += 1
