@@ -37,18 +37,44 @@ If needed, I can extend this to also return the actual subarray by tracking indi
            and whenever I find a new maximum, I’ll record its start and end positions.
            
            1. temp_start, best_start and best_end”"""
-           
-def maxSumArray2(num):
+
+
+def maxSumArrayPartB(num):
     # Return the max and the subarrays itself
-    cur_sum = num [0]
+    cur_sum = num[0]
     max_sum = num[0]
-    
+
     # three variables
     temp_start = 0
     best_start = 0
     best_end = 0
-    
+
     for i in range(1, len(num)):
-        cur_sum = max(num[i], cur_sum + num[i])
-        max_sum =  max(cur_sum, max_sum)
-    return max_sum
+        # cur_sum = max(num[i], cur_sum + num[i])
+
+        """Part A — Decide Restart vs Continue"""
+
+        # 1.  I compare num[i] and cur_sum + num[i].
+        # 2. If num[i] is larger, I restart the subarray at index i and update temp_start.
+        # 3. Otherwise, I continue the existing subarray
+        if num[i] > cur_sum + num[i]:
+            cur_sum = num[i]
+            temp_start = i
+        else:
+            cur_sum += num[i]
+
+        # max_sum =  max(cur_sum, max_sum)
+        """Part B — Update Global Best"""
+
+        # 1. After updating the current sum, I check if it’s greater than the global maximum.
+        # 2. If it is , I update max_sum and store the current subarray boundaries using temp_start and the current index.
+        if cur_sum > max_sum:
+            max_sum = cur_sum
+            best_start = temp_start
+            best_end = i
+
+    return max_sum, num[best_start: best_end + 1]
+
+
+print(
+    f'Maximum SubArry of {[-1, 2, 3, 6, -5]} and Return array is {maxSumArrayPartB([-1, 2, 3, 6, -5])}')

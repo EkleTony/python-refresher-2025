@@ -75,7 +75,39 @@ def threeSum_pointer(nums):
     return result
 
 
+def T3sum(nums):
+    # sort--- so we could use pointers
+    nums.sort()
+    n = len(nums)
+    result = []
+
+    for i in range(n):
+        if i < 0 and nums[i] == nums[i-1]:
+            continue
+
+        # using two pointers
+        l = i+1
+        r = n-1
+        while l < r:
+            sum3 = nums[i] + nums[l] + nums[r]
+            if sum3 == 0:
+                result.append([nums[i], nums[l], nums[r]])
+                l += 1
+                r -= 1
+                # checking for duplicates
+                while l < r and nums[l] == nums[l-1]:
+                    l += 1
+                while l < r and num[r] == nums[r+1]:
+                    r -= 1
+            else:
+                if sum3 < 0:
+                    l += 1
+                else:
+                    r -= 1
+        return result
+
 # time = O(n log n) + O(n^2) = O(n^2), Space = O(n)
+
 
 print(f'three Sum with pointer method: {threeSum_pointer(arr)}')
 

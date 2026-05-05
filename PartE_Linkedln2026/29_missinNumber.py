@@ -1,7 +1,7 @@
 
 
 def missingNum1(num):
-    n = max(num)
+    n = len(num) + 1
     expected = n*(n+1)//2
     actual = sum(num)
     missing = expected - actual
@@ -11,9 +11,9 @@ def missingNum1(num):
 print(f"missing num of {1, 2, 4, 5} is {missingNum1([1, 2, 4, 5])}")
 
 
-def missingMultiple(num):
+def missingMultiple(num, k):
     seen = set(num)
-    n = 6
+    n = len(num) + k
     missing = []
     for i in range(1, n+1):
         if i not in seen:
@@ -21,4 +21,4 @@ def missingMultiple(num):
     return missing
 
 
-print(f'Missing Numbers are in [1,3,4,6]: {missingMultiple([1, 2, 4, 6])}')
+print(f'Missing Numbers are in [1,3,4,6]: {missingMultiple([1, 2,3, 4, 6], 1)}')

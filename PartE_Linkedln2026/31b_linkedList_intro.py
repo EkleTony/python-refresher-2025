@@ -122,10 +122,18 @@ def insert_at_begin(head, tail, val):
     head.prev = new_node
     return new_node, tail
 
+
+def remove(head, tail, val):
+    new_node = DoubleNode(val, next=head)
+    head.prev = new_node
+    return new_node, tail
+
+
 def insert_at_end(head, tail, val):
-    new_node = DoubleNode(val, prev = tail)
+    new_node = DoubleNode(val, prev=tail)
     tail.next = new_node
     return head, new_node
+
 
 head, tail = insert_at_begin(head_dll, tail_dll, 3)
 diplayDLL(head, tail)

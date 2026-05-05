@@ -77,3 +77,26 @@ print(f'List2 = {display(list2)}')
 mergedList = mergedList(list1, list2)
 
 print(f'Merged list is ==  {display(mergedList)} ')
+
+
+class ListNode:
+    def __init__(self, val=0, next=None):
+        self.val = 0
+        self.next = next
+
+
+def mergedList2(list1, list2):
+    dummy = ListNode()
+    cur = dummy
+    while list1 and list2:
+        if list1.val < list2.val:
+            cur.next = list1
+            list1 = list1.next
+        else:
+            cur.next = list2
+            list2 = list2.next
+        cur = cur.next
+
+    # updaet remaing values
+    cur.next = list1 if list1 else list2
+    return dummy

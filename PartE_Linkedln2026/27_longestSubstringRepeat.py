@@ -25,7 +25,7 @@ def longestSubstring(st):
     return max_len
 
 
-st = "abcabcbb"
+st = "abcabcdbb"
 
 print(f"Longest Substring of {st} is == {longestSubstring(st)}")
 
@@ -38,7 +38,7 @@ def longestStringPartB(st):
     left = 0
     max_len = 0
     # introduce start
-    start = left
+    start = 0
     for right in range(len(st)):
         while st[right] in charset:
             charset.remove(st[left])
@@ -49,8 +49,9 @@ def longestStringPartB(st):
         # ======“If I need the substring, I’ll store the start index when I update max length.”
         window = (right - left) + 1
         if window > max_len:
-            max_len = right - left + 1
+            max_len = window
             start = left
+
         # max_len = max(max_len, window)
     return max_len, st[start: start+max_len]
 
